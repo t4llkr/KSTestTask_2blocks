@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TestExtjs</title>
+    <link rel="stylesheet" href="~/lib/extjs/resources/TestExtjs-all.css" />
+    <link rel="stylesheet" href="~/lib/extjs/resources/TestExtjs-all_1.css" />
+    <link rel="stylesheet" href="~/lib/extjs/resources/TestExtjs-all_2.css" />
+</head>
+<body>
+
+    @RenderBody()
+
+    <script src="~/lib/extjs/ext-all-debug.js"></script>
+    <script src="~/src/app/user/model/User.js"></script>
+    <script src="~/src/app/user/store/User.js"></script>
+    <script src="~/src/app/user/view/ListViewModel.js"></script>
+    <script src="~/src/app/user/view/List.js"></script>
+    <script src="~/src/app/user/controller/User.js"></script>
+
+    <script src="~/src/app/Application.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
