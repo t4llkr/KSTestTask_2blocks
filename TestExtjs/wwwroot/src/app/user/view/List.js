@@ -37,14 +37,14 @@ Ext.define('TestExtjs.user.view.List', {
             border: false,
             items: [{
                 xtype: 'textfield',
-                fieldLabel: 'Номер:',
+                fieldLabel: 'Номер:*',
                 name: 'number',
                 maskRe: /[0-9]/,
                 allowBlank: false,
                 margin: '0 10 0 0'
             }, {
                 xtype: 'textfield',
-                fieldLabel: 'Дата:',
+                fieldLabel: 'Дата:*',
                 name: 'date',
                 //maskRe: /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/,
                 allowBlank: false,
@@ -65,7 +65,7 @@ Ext.define('TestExtjs.user.view.List', {
                 xtype: 'combobox',
                 allowBlank: false,
                 maxLength: 16,
-                fieldLabel: 'Счёт отправителя:',
+                fieldLabel: 'Счёт отправителя:*',
                 store: new Ext.data.SimpleStore({
                     id: 0,
                     fields: [ 'myId', 'myText' ],
@@ -80,7 +80,7 @@ Ext.define('TestExtjs.user.view.List', {
             }, {
                 xtype: 'combobox',
                 allowBlank: false,
-                fieldLabel: 'Наименование отправителя:',
+                fieldLabel: 'Наименование отправителя:*',
                 store: new Ext.data.SimpleStore({
                     id: 0,
                     fields: ['myId', 'myText'],
